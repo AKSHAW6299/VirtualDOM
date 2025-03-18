@@ -54,18 +54,18 @@ function Counter() {
 
         <div className="mt-4 text-left text-gray-700 bg-gray-100 p-4 rounded-md">
           <p>
-            <strong>ReactDOM.render()</strong>:
+            <strong>1) ReactDOM.render()</strong>:
             <br />
             This function is used to render a React element/component into the <span className="font-bold">Virtual DOM</span>.
           </p>
           <p className="py-2">
-            <strong>&lt;Counter /&gt;</strong>:
+            <strong>2) &lt;Counter /&gt;</strong>:
             <br />
             This is the React component that will be rendered. React creates an
             instance of this component when called.
           </p>
           <p className="py-2">
-            <strong>document.getElementById("root")</strong>:
+            <strong>3) document.getElementById("root")</strong>:
             <br />
             This targets the HTML element with the id "root" (usually a div in
             the HTML file), which is the container where the component will be
@@ -75,7 +75,7 @@ function Counter() {
           <hr />
 
           <p className="py-2">
-            <strong>Reconciliation algorithm</strong>:
+            <strong>Definition : Reconciliation algorithm</strong>
             <br />
             It is nothing but a algorithm to compair the virtual dom with the actual dom and update the actual dom accordingly
           </p>
