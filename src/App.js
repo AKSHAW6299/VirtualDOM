@@ -12,36 +12,44 @@ function Counter() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-200 to-indigo-200 flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-sm text-center">
-        <h1 className="text-3xl font-semibold text-indigo-600 mb-4">
+    <div className="min-h-screen bg-blue-100 flex justify-center items-center p-4">
+      <div className="bg-white p-6 rounded-md shadow-lg w-full max-w-4xl text-center">
+        <h1 className="text-4xl font-semibold text-indigo-600 mb-4">
           Virtual DOM Example
         </h1>
-        <p className="text-xl font-medium text-gray-800 mb-6">
-          Count: <span className="text-4xl text-blue-600">{count}</span>
+        <p className="text-lg text-gray-700 mb-4">
+          Count: <span className="text-3xl text-blue-600">{count}</span>
         </p>
         <button
           onClick={incrementCount}
-          className="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-200 ease-in-out shadow-lg focus:outline-none"
+          className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-200"
         >
           Increment
         </button>
 
-        <h2 className="mt-8 text-2xl font-semibold text-indigo-600 mb-4">
+        <h2 className="mt-6 text-xl font-semibold text-indigo-600">
           Explanation of `ReactDOM.render()`
         </h2>
-        <pre className="text-left text-gray-800 bg-gray-100 p-4 rounded-lg shadow-md">
-          {`ReactDOM.render(<Counter />, document.getElementById("root"));
-          
-1. ReactDOM.render(): 
-  - This function is used to render a React element/component into the DOM.
-
-2. <Counter />: 
-  - This is the React component that will be rendered. React creates an instance of this component when called.
-
-3. document.getElementById("root"): 
-  - This targets the HTML element with the id "root" (usually a div in the HTML file), which is the container where the component will be rendered.`}
-        </pre>
+        <div className="mt-4 text-left text-gray-700 bg-gray-100 p-4 rounded-md">
+          <p>
+            <strong>ReactDOM.render()</strong>:
+            <br />
+            This function is used to render a React element/component into the DOM.
+          </p>
+          <p className="py-2">
+            <strong>&lt;Counter /&gt;</strong>:
+            <br />
+            This is the React component that will be rendered. React creates an
+            instance of this component when called.
+          </p>
+          <p className="py-2">
+            <strong>document.getElementById("root")</strong>:
+            <br />
+            This targets the HTML element with the id "root" (usually a div in
+            the HTML file), which is the container where the component will be
+            rendered.
+          </p>
+        </div>
       </div>
     </div>
   );
