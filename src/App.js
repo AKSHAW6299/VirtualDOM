@@ -15,7 +15,7 @@ function Counter() {
     <div className="min-h-screen bg-blue-100 flex justify-center items-center p-4">
       <div className="bg-white p-6 rounded-md shadow-lg w-full max-w-4xl text-center">
         <h1 className="text-4xl font-semibold text-indigo-600 mb-4">
-          Virtual DOM Example
+          Virtual DOM : (Reconciliation algorithm)
         </h1>
         <p className="text-lg text-gray-700 mb-4">
           Count: <span className="text-3xl text-blue-600">{count}</span>
@@ -34,7 +34,7 @@ function Counter() {
           <p>
             <strong>ReactDOM.render()</strong>:
             <br />
-            This function is used to render a React element/component into the DOM.
+            This function is used to render a React element/component into the <span className="font-bold">Virtual DOM</span>.
           </p>
           <p className="py-2">
             <strong>&lt;Counter /&gt;</strong>:
@@ -48,6 +48,14 @@ function Counter() {
             This targets the HTML element with the id "root" (usually a div in
             the HTML file), which is the container where the component will be
             rendered.
+          </p>
+          
+          <hr />
+
+          <p className="py-2">
+            <strong>Reconciliation algorithm</strong>:
+            <br />
+            It is nothing but a algorithm to compair the virtual dom with the actual dom and update the actual dom accordingly
           </p>
         </div>
       </div>
