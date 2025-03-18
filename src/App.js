@@ -12,24 +12,36 @@ function Counter() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-100 flex justify-center items-center p-4">
-      <div className="bg-white p-6 rounded-md shadow-lg w-full max-w-4xl text-center">
+    <div className="min-h-screen bg-blue-100 flex justify-center">
+      <div className="bg-white p-6 rounded-md shadow-lg w-full max-full text-center">
         <h1 className="text-4xl font-semibold text-indigo-600 mb-4">
           Virtual DOM : (Reconciliation algorithm)
         </h1>
-        <p className="text-lg text-gray-700 mb-4">
-          Count: <span className="text-3xl text-blue-600">{count}</span>
-        </p>
-        <button
-          onClick={incrementCount}
-          className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-200"
-        >
-          Increment
-        </button>
 
-        <h2 className="mt-6 text-xl font-semibold text-indigo-600">
-          Explanation of `ReactDOM.render()`
-        </h2>
+        <div className="flex justify-between py-4">
+          <div>
+            <li>For making our app faster</li>
+            <li>No need to refresh the page</li>
+            <li> only the required part is changed</li>
+          </div>
+          <div>
+            <p className="text-lg text-gray-700 mb-4">
+              Count: <span className="text-3xl text-blue-600">{count}</span>
+            </p>
+            <button
+              onClick={incrementCount}
+              className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-200"
+            >
+              Increment
+            </button>
+
+            <h2 className="mt-6 text-xl font-semibold text-indigo-600">
+              Explanation of `ReactDOM.render()`
+            </h2>
+          </div>
+        </div>
+
+
         <div className="mt-4 text-left text-gray-700 bg-gray-100 p-4 rounded-md">
           <p>
             <strong>ReactDOM.render()</strong>:
@@ -49,7 +61,7 @@ function Counter() {
             the HTML file), which is the container where the component will be
             rendered.
           </p>
-          
+
           <hr />
 
           <p className="py-2">
