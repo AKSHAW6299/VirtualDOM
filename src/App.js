@@ -26,6 +26,22 @@ function Counter() {
         >
           Increment
         </button>
+
+        <h2 className="mt-8 text-2xl font-semibold text-indigo-600 mb-4">
+          Explanation of `ReactDOM.render()`
+        </h2>
+        <pre className="text-left text-gray-800 bg-gray-100 p-4 rounded-lg shadow-md">
+          {`ReactDOM.render(<Counter />, document.getElementById("root"));
+          
+1. ReactDOM.render(): 
+  - This function is used to render a React element/component into the DOM.
+
+2. <Counter />: 
+  - This is the React component that will be rendered. React creates an instance of this component when called.
+
+3. document.getElementById("root"): 
+  - This targets the HTML element with the id "root" (usually a div in the HTML file), which is the container where the component will be rendered.`}
+        </pre>
       </div>
     </div>
   );
